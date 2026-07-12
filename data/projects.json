@@ -1,0 +1,53 @@
+{
+  "projects": [
+    {
+      "id": "w1",
+      "category": "Weddings",
+      "title": "Tolu & Ifeoma",
+      "location": "Lagos",
+      "image": "/portfolio/placeholder-wedding-1.jpg"
+    },
+    {
+      "id": "w2",
+      "category": "Weddings",
+      "title": "Amaka & Chidi",
+      "location": "Abuja",
+      "image": "/portfolio/placeholder-wedding-2.jpg"
+    },
+    {
+      "id": "w3",
+      "category": "Weddings",
+      "title": "Bimbo & Femi",
+      "location": "Ibadan",
+      "image": "/portfolio/placeholder-wedding-3.jpg"
+    },
+    {
+      "id": "s1",
+      "category": "Short Content",
+      "title": "Brand Reel — Aura Studio",
+      "location": "Lagos",
+      "image": "/portfolio/placeholder-short-1.jpg"
+    },
+    {
+      "id": "s2",
+      "category": "Short Content",
+      "title": "Behind the Lens",
+      "location": "Lagos",
+      "image": "/portfolio/placeholder-short-2.jpg"
+    },
+    {
+      "id": "g1",
+      "category": "Social Graphics",
+      "title": "Season Announcement",
+      "location": "Digital",
+      "image": "/portfolio/placeholder-graphic-1.jpg"
+    },
+    {
+      "id": "g2",
+      "category": "Social Graphics",
+      "title": "Client Testimonial Card",
+      "location": "Digital",
+      "image": "/portfolio/placeholder-graphic-2.jpg"
+    }
+  ]
+}

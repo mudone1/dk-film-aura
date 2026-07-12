@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0b0908;
+  color: #f3ede1;
+}
+
+::selection {
+  background: #c9a24c;
+  color: #0b0908;
+}
+
+/* thin gold scrollbar for the filmstrip gallery */
+.filmstrip::-webkit-scrollbar {
+  height: 4px;
+}
+.filmstrip::-webkit-scrollbar-track {
+  background: transparent;
+}
+.filmstrip::-webkit-scrollbar-thumb {
+  background: #c9a24c;
+  border-radius: 999px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
