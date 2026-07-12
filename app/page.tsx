@@ -1,8 +1,10 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
 import Gallery from "@/components/Gallery";
 import RateCard from "@/components/RateCard";
-import About from "@/components/About";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -11,6 +13,8 @@ export default function Home() {
       <Nav />
       <Hero />
       <About />
+      <Skills />
+      <Experience />
       <RateCard />
       <Gallery />
       <Footer />

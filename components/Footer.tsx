@@ -46,6 +46,20 @@ export default function Footer() {
             {siteContent.brand.instagram}
           </a>
         </div>
+
+        <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-6 font-body text-xs tracking-widest2 uppercase text-aura-muted">
+          {siteContent.socials.map((s) => (
+            <a
+              key={s.label + s.value}
+              href={s.href}
+              target="_blank"
+              className="hover:text-aura-gold transition-colors"
+            >
+              {s.value}
+            </a>
+          ))}
+        </div>
+        <p className="font-body text-xs text-aura-muted mt-4">{siteContent.brand.location}</p>
       </div>
 
       <div className="relative mt-24 px-6 md:px-10 max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-aura-gold/10">

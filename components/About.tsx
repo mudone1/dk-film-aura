@@ -85,16 +85,27 @@ export default function About() {
             ))}
           </div>
 
-          <motion.a
-            href="#contact"
+          <motion.div
             initial={{ opacity: 0, y: 14 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-10%" }}
             transition={{ duration: 0.5 }}
-            className="mt-10 inline-block font-body text-xs tracking-[0.2em] uppercase bg-aura-cream text-aura-black px-6 py-3 hover:bg-aura-gold transition-colors"
+            className="mt-10 flex flex-wrap items-center gap-4"
           >
-            Get in Touch
-          </motion.a>
+            <a
+              href="#contact"
+              className="inline-block font-body text-xs tracking-[0.2em] uppercase bg-aura-cream text-aura-black px-6 py-3 hover:bg-aura-gold transition-colors"
+            >
+              Get in Touch
+            </a>
+            <a
+              href="/Sadiq_Abdulrasheed_CV.pdf"
+              download
+              className="inline-flex items-center gap-2 font-body text-xs tracking-[0.2em] uppercase border border-aura-gold/40 text-aura-gold px-6 py-3 hover:border-aura-gold transition-colors"
+            >
+              Download CV ↓
+            </a>
+          </motion.div>
         </div>
       </div>
     </section>

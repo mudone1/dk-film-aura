@@ -83,9 +83,18 @@ export default function Gallery() {
               className="relative shrink-0 w-[78vw] sm:w-[46vw] md:w-[30vw] aspect-[4/5] bg-aura-charcoal border border-aura-gold/15 overflow-hidden group"
             >
               <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_50%,rgba(11,9,8,0.9)_100%)] z-10" />
-              <div className="absolute inset-0 flex items-center justify-center text-aura-muted/40 font-display text-sm">
-                image
-              </div>
+              {p.image && !p.image.startsWith("/portfolio/placeholder") ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={p.image}
+                  alt={p.title}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              ) : (
+                <div className="absolute inset-0 flex items-center justify-center text-aura-muted/40 font-display text-sm">
+                  image
+                </div>
+              )}
               <div className="absolute bottom-0 left-0 right-0 p-5 z-20">
                 <p className="font-display text-aura-cream text-lg">{p.title}</p>
                 <p className="font-body text-aura-gold text-xs tracking-widest2 uppercase mt-1">
