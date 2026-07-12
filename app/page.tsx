@@ -10,9 +10,9 @@ export default function Home() {
     <main>
       <Nav />
       <Hero />
-      <Gallery />
-      <RateCard />
       <About />
+      <RateCard />
+      <Gallery />
       <Footer />
     </main>
   );

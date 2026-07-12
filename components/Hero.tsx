@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { siteContent } from "@/data/site-content";
+import RoleRotator from "./RoleRotator";
 
 export default function Hero() {
   return (
@@ -40,9 +41,25 @@ export default function Hero() {
         </motion.h1>
 
         <motion.div
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.35 }}
+          className="mt-8 flex items-center gap-3"
+        >
+          <span className="h-px w-8 bg-aura-gold/40" />
+          <span className="font-body text-xs tracking-widest2 uppercase text-aura-muted">
+            Booking now for
+          </span>
+          <RoleRotator
+            words={["Weddings", "Traditional Ceremonies", "Pre-Wedding Shoots", "Events"]}
+            className="font-body text-xs tracking-widest2 uppercase text-aura-gold border border-aura-gold/40 px-3 py-1.5"
+          />
+        </motion.div>
+
+        <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
           className="mt-10 max-w-md flex flex-col sm:flex-row sm:items-center gap-6"
         >
           <p className="font-body text-aura-muted text-sm leading-relaxed">
