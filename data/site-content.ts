@@ -1,0 +1,70 @@
+export const siteContent = {
+  brand: {
+    name: "DK Film Aura",
+    tagline: "Cinematic. Emotional. Timeless.",
+    blurb:
+      "We don't just document your wedding — we craft a timeless film you'll relive for generations.",
+    founder: "Sadiq Abdulrasheed",
+    phone: "+2348089902777",
+    email: "[email protected]",
+    instagram: "@dkfilmaura",
+  },
+  packages: [
+    {
+      name: "Aura Essential",
+      tag: "The beautiful basics.",
+      price: "₦250,000",
+      popular: false,
+      features: [
+        "Up to 6 Hours Coverage",
+        "1 Videographer",
+        "3 – 5 Minute Cinematic Highlight Film",
+        "Full Ceremony Edit",
+        "Digital Delivery",
+      ],
+    },
+    {
+      name: "Aura Signature",
+      tag: "The story, beautifully told.",
+      price: "₦450,000",
+      popular: true,
+      features: [
+        "Full-day Coverage (Up to 10 Hours)",
+        "2 Videographers",
+        "Cinematic Highlight Film (5 – 8 mins)",
+        "Full Wedding Film",
+        "Drone Shots (Where Permitted)",
+        "Social Media Teaser (Vertical)",
+        "Digital Delivery",
+      ],
+    },
+    {
+      name: "Aura Prestige",
+      tag: "The ultimate experience.",
+      price: "₦700,000",
+      popular: false,
+      features: [
+        "Traditional + White Wedding (2 Days Coverage)",
+        "2 – 3 Videographers",
+        "Cinematic Wedding Film",
+        "Documentary Edit",
+        "Drone Coverage",
+        "Teaser Within 72 Hours",
+        "Premium USB Box + Online Gallery",
+      ],
+    },
+  ],
+  addOns: [
+    { label: "Drone Coverage", price: "₦50,000" },
+    { label: "Pre-wedding Film", price: "₦100,000" },
+    { label: "Same-Day Edit", price: "₦150,000" },
+    { label: "Extra Hour", price: "₦30,000 /hr" },
+    { label: "Raw Footage", price: "₦75,000" },
+    { label: "Express Delivery (Within 7 Days)", price: "₦100,000" },
+  ],
+  delivery: [
+    { label: "Teaser", time: "3 – 5 Days" },
+    { label: "Highlight Film", time: "2 – 4 Weeks" },
+    { label: "Full Wedding Film", time: "4 – 8 Weeks" },
+  ],
+};
