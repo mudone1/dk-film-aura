@@ -19,7 +19,23 @@ export default function Hero() {
         ))}
       </div>
 
-      <div className="relative z-10 w-full px-6 md:px-10 pb-20 md:pb-28 pt-40">
+      <div className="relative z-10 w-full px-6 md:px-10 pb-20 md:pb-28 pt-32 md:pt-28">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.85 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="mx-auto mb-8 w-32 h-32 md:w-44 md:h-44 rounded-full overflow-hidden border border-aura-gold/50 ring-4 ring-aura-cream/5"
+        >
+          <Image
+            src="/avatar.jpeg"
+            alt={siteContent.brand.founder}
+            width={352}
+            height={352}
+            className="w-full h-full object-cover"
+            priority
+          />
+        </motion.div>
+
         <motion.p
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}

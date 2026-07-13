@@ -3,43 +3,81 @@
     {
       "id": "w1",
       "category": "Weddings",
-      "title": "Tolu & Ifeoma",
-      "location": "Lagos",
-      "image": "/portfolio/placeholder-wedding-1.jpg"
+      "title": "Wedding Film",
+      "location": "Nigeria",
+      "type": "video",
+      "driveId": "1GV379guTz0awyBhRLoF2xpYrcrybIhPz"
     },
     {
       "id": "w2",
       "category": "Weddings",
-      "title": "Amaka & Chidi",
-      "location": "Abuja",
-      "image": "/portfolio/placeholder-wedding-2.jpg"
+      "title": "Wedding Highlight",
+      "location": "Nigeria",
+      "type": "video",
+      "driveId": "1Is8DfiTQg16AXqa7trARkZ_EwBWAVa28"
     },
     {
       "id": "w3",
       "category": "Weddings",
-      "title": "Bimbo & Femi",
-      "location": "Ibadan",
-      "image": "/portfolio/placeholder-wedding-3.jpg"
+      "title": "Traditional Ceremony",
+      "location": "Nigeria",
+      "type": "video",
+      "driveId": "1F7eA1qGGELOKiFkYRUWkVnIanqWFXkxr"
+    },
+    {
+      "id": "w4",
+      "category": "Weddings",
+      "title": "Event Coverage",
+      "location": "Nigeria",
+      "type": "video",
+      "driveId": "1v52iYZJpin6tlh_1NFRcHr_u_-sCotS5"
     },
     {
       "id": "s1",
       "category": "Short Content",
-      "title": "Brand Reel — Aura Studio",
-      "location": "Lagos",
-      "image": "/portfolio/placeholder-short-1.jpg"
+      "title": "Short Content Reel",
+      "location": "Digital",
+      "type": "video",
+      "driveId": "1nnlbJr7pQ-dWITigBvzmmiuv4MnlTLWL"
     },
     {
       "id": "s2",
       "category": "Short Content",
-      "title": "Behind the Lens",
-      "location": "Lagos",
-      "image": "/portfolio/placeholder-short-2.jpg"
+      "title": "Short Content Reel",
+      "location": "Digital",
+      "type": "video",
+      "driveId": "1h-0lYS8UvL-uNXSTQc6SXajGQX54TasL"
+    },
+    {
+      "id": "s3",
+      "category": "Short Content",
+      "title": "Short Content Reel",
+      "location": "Digital",
+      "type": "video",
+      "driveId": "1xCdT4zwT_e-z6ZRCJjZ-4idAUquE6Qyn"
+    },
+    {
+      "id": "s4",
+      "category": "Short Content",
+      "title": "Short Content Reel",
+      "location": "Digital",
+      "type": "video",
+      "driveId": "1-w_XKzaJhtYmBG_3-IdU_gK7jYqU7F7o"
+    },
+    {
+      "id": "s5",
+      "category": "Short Content",
+      "title": "Short Content Reel",
+      "location": "Digital",
+      "type": "video",
+      "driveId": "1InXhXaAAeqYJoSY-BKeQYmcmb9I1sraG"
     },
     {
       "id": "g1",
       "category": "Social Graphics",
       "title": "Season Announcement",
       "location": "Digital",
+      "type": "image",
       "image": "https://drive.google.com/thumbnail?id=1u4Lk1sJOOD0RbhVEs4tBI2yuZ1_BN6mu&sz=w1000"
     },
     {
@@ -47,6 +85,7 @@
       "category": "Social Graphics",
       "title": "Client Testimonial Card",
       "location": "Digital",
+      "type": "image",
       "image": "https://drive.google.com/thumbnail?id=1VX9RpOULP7BH4KzMFtG8kQuywmS_wTSY&sz=w1000"
     }
   ]

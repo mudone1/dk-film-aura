@@ -3,7 +3,7 @@ export const siteContent = {
     name: "DK Film Aura",
     tagline: "Cinematic. Emotional. Timeless.",
     blurb:
-      "We don't just document your wedding — we craft a timeless film you'll relive for generations.",
+      "We don't just document your wedding, we craft a timeless film you'll relive for generations.",
     founder: "Sadiq Abdulrasheed",
     role: "Content Creator | Video Editor",
     phone: "+2348089902777",
@@ -63,6 +63,14 @@ export const siteContent = {
         "Worked directly with clients to meet content objectives.",
       ],
     },
+    {
+      role: "Content Creator & Music Producer",
+      company: "YouTube",
+      meta: "2020 – 2021",
+      bullets: [
+        "Started content creation and music production on YouTube.",
+      ],
+    },
   ],
   education: {
     school: "Federal University of Technology, Minna",
@@ -76,9 +84,9 @@ export const siteContent = {
       price: "₦250,000",
       popular: false,
       features: [
-        "Up to 6 Hours Coverage",
+        "Up to 10 Hours Coverage",
         "1 Videographer",
-        "3 – 5 Minute Cinematic Highlight Film",
+        "Cinematic Highlight Film (Over 1 Minute)",
         "Full Ceremony Edit",
         "Digital Delivery",
       ],
@@ -89,9 +97,9 @@ export const siteContent = {
       price: "₦450,000",
       popular: true,
       features: [
-        "Full-day Coverage (Up to 10 Hours)",
+        "Full-day Coverage (Up to 12 Hours)",
         "2 Videographers",
-        "Cinematic Highlight Film (5 – 8 mins)",
+        "Cinematic Highlight Film (Over 1 Minute)",
         "Full Wedding Film",
         "Drone Shots (Where Permitted)",
         "Social Media Teaser (Vertical)",
@@ -115,7 +123,7 @@ export const siteContent = {
     },
   ],
   addOns: [
-    { label: "Drone Coverage", price: "₦50,000" },
+    { label: "Drone Coverage", price: "₦120,000" },
     { label: "Pre-wedding Film", price: "₦100,000" },
     { label: "Same-Day Edit", price: "₦150,000" },
     { label: "Extra Hour", price: "₦30,000 /hr" },

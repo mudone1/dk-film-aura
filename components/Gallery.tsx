@@ -2,13 +2,16 @@
 
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import VideoLightbox from "./VideoLightbox";
 
 type Project = {
   id: string;
   category: string;
   title: string;
   location: string;
-  image: string;
+  type?: "image" | "video";
+  image?: string;
+  driveId?: string;
 };
 
 const CATEGORIES = ["Weddings", "Short Content", "Social Graphics"] as const;
@@ -16,6 +19,8 @@ const CATEGORIES = ["Weddings", "Short Content", "Social Graphics"] as const;
 export default function Gallery() {
   const [projects, setProjects] = useState<Project[]>([]);
   const [active, setActive] = useState<(typeof CATEGORIES)[number]>("Weddings");
+  const [lightboxId, setLightboxId] = useState<string | null>(null);
+  const [lightboxTitle, setLightboxTitle] = useState<string>("");
 
   useEffect(() => {
     fetch("/api/projects")
@@ -80,10 +85,32 @@ export default function Gallery() {
               viewport={{ once: true, margin: "-10%" }}
               transition={{ duration: 0.5, delay: i * 0.06 }}
               style={{ scrollSnapAlign: "start" }}
-              className="relative shrink-0 w-[78vw] sm:w-[46vw] md:w-[30vw] aspect-[4/5] bg-aura-charcoal border border-aura-gold/15 overflow-hidden group"
+              onClick={() => {
+                if (p.type === "video" && p.driveId) {
+                  setLightboxId(p.driveId);
+                  setLightboxTitle(p.title);
+                }
+              }}
+              className={`relative shrink-0 w-[78vw] sm:w-[46vw] md:w-[30vw] aspect-[4/5] bg-aura-charcoal border border-aura-gold/15 overflow-hidden group ${
+                p.type === "video" ? "cursor-pointer" : ""
+              }`}
             >
               <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_50%,rgba(11,9,8,0.9)_100%)] z-10" />
-              {p.image && !p.image.startsWith("/portfolio/placeholder") ? (
+              {p.type === "video" && p.driveId ? (
+                <>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={`https://drive.google.com/thumbnail?id=${p.driveId}&sz=w1000`}
+                    alt={p.title}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 z-20 flex items-center justify-center">
+                    <div className="w-14 h-14 rounded-full border border-aura-gold/70 bg-aura-black/50 flex items-center justify-center group-hover:bg-aura-gold group-hover:border-aura-gold transition-colors">
+                      <span className="text-aura-gold group-hover:text-aura-black text-lg ml-1">▶</span>
+                    </div>
+                  </div>
+                </>
+              ) : p.image ? (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
                   src={p.image}
@@ -111,6 +138,12 @@ export default function Gallery() {
           ))}
         </div>
       </div>
+
+      <VideoLightbox
+        driveId={lightboxId}
+        title={lightboxTitle}
+        onClose={() => setLightboxId(null)}
+      />
     </section>
   );
 }
