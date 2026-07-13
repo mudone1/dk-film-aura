@@ -35,12 +35,24 @@ export default function Gallery() {
     <section id="work" className="bg-aura-black py-28 md:py-36 border-t border-aura-gold/10">
       <div className="px-6 md:px-10 mb-12 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
         <div>
-          <p className="font-body text-xs tracking-widest2 text-aura-gold uppercase mb-3">
+          <motion.p
+            initial={{ opacity: 0, y: 14 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-10%" }}
+            transition={{ duration: 0.6 }}
+            className="font-body text-xs tracking-widest2 text-aura-gold uppercase mb-3"
+          >
             Selected Work
-          </p>
-          <h2 className="font-display text-aura-cream text-4xl md:text-5xl">
+          </motion.p>
+          <motion.h2
+            initial={{ opacity: 0, y: 14 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-10%" }}
+            transition={{ duration: 0.6, delay: 0.05 }}
+            className="font-display text-aura-cream text-4xl md:text-5xl"
+          >
             A frame from every story.
-          </h2>
+          </motion.h2>
         </div>
 
         <div className="flex gap-2">

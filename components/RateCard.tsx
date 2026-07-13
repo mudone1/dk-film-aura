@@ -8,15 +8,33 @@ export default function RateCard() {
     <section id="rates" className="bg-aura-charcoal py-28 md:py-36 border-t border-aura-gold/10">
       <div className="px-6 md:px-10 max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <p className="font-body text-xs tracking-widest2 text-aura-gold uppercase mb-3">
+          <motion.p
+            initial={{ opacity: 0, y: 14 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-10%" }}
+            transition={{ duration: 0.6 }}
+            className="font-body text-xs tracking-widest2 text-aura-gold uppercase mb-3"
+          >
             Investment
-          </p>
-          <h2 className="font-display text-aura-cream text-4xl md:text-6xl leading-tight">
+          </motion.p>
+          <motion.h2
+            initial={{ opacity: 0, y: 14 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-10%" }}
+            transition={{ duration: 0.6, delay: 0.05 }}
+            className="font-display text-aura-cream text-4xl md:text-6xl leading-tight"
+          >
             Wedding <span className="font-script text-aura-gold text-5xl md:text-7xl align-middle">Rate Card</span>
-          </h2>
-          <p className="font-body text-aura-muted text-sm mt-6 max-w-md mx-auto">
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 14 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-10%" }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="font-body text-aura-muted text-sm mt-6 max-w-md mx-auto"
+          >
             {siteContent.brand.blurb}
-          </p>
+          </motion.p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">

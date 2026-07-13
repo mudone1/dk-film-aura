@@ -15,8 +15,8 @@ export default function Home() {
       <About />
       <Skills />
       <Experience />
-      <RateCard />
       <Gallery />
+      <RateCard />
       <Footer />
     </main>
   );
