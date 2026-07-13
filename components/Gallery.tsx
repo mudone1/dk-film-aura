@@ -61,8 +61,8 @@ export default function Gallery() {
       </div>
 
       {/* filmstrip: horizontal drag-scroll, sprocket rails top & bottom */}
-      <div className="relative">
-        <div className="absolute top-0 inset-x-0 h-2 flex gap-6 px-6 md:px-10 opacity-30 pointer-events-none">
+      <div className="relative overflow-hidden">
+        <div className="absolute top-0 inset-x-0 h-2 flex gap-6 px-6 md:px-10 opacity-30 pointer-events-none overflow-hidden">
           {Array.from({ length: 40 }).map((_, i) => (
             <span key={i} className="w-1 h-1 bg-aura-gold shrink-0" />
           ))}
@@ -132,7 +132,7 @@ export default function Gallery() {
           ))}
         </motion.div>
 
-        <div className="absolute bottom-0 inset-x-0 h-2 flex gap-6 px-6 md:px-10 opacity-30 pointer-events-none">
+        <div className="absolute bottom-0 inset-x-0 h-2 flex gap-6 px-6 md:px-10 opacity-30 pointer-events-none overflow-hidden">
           {Array.from({ length: 40 }).map((_, i) => (
             <span key={i} className="w-1 h-1 bg-aura-gold shrink-0" />
           ))}

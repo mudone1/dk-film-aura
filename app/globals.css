@@ -4,11 +4,15 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
   background-color: #0b0908;
   color: #f3ede1;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 ::selection {
