@@ -12,10 +12,10 @@ export default function Home() {
     <main>
       <Nav />
       <Hero />
+      <Gallery />
       <About />
       <Skills />
       <Experience />
-      <Gallery />
       <RateCard />
       <Footer />
     </main>
