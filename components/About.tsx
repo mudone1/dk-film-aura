@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { siteContent } from "@/data/site-content";
 import ScrollRevealText from "./ScrollRevealText";
+import TypewriterText from "./TypewriterText";
 
 const STATS = [
   { icon: "🎬", label: "Experience", value: "5+ Yrs Filming" },
@@ -37,24 +38,19 @@ export default function About() {
         </motion.div>
 
         <div>
-          <motion.p
-            initial={{ opacity: 0, y: 14 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-10%" }}
-            transition={{ duration: 0.6 }}
+          <TypewriterText
+            as="p"
+            text="The Filmmaker"
+            charDelay={0.04}
             className="font-body text-xs tracking-widest2 text-aura-gold uppercase mb-4"
-          >
-            The Filmmaker
-          </motion.p>
-          <motion.h2
-            initial={{ opacity: 0, y: 14 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-10%" }}
-            transition={{ duration: 0.6, delay: 0.05 }}
+          />
+          <TypewriterText
+            as="h2"
+            text={siteContent.brand.founder}
+            charDelay={0.045}
+            startDelay={0.4}
             className="font-display text-aura-cream text-3xl md:text-5xl leading-tight mb-10"
-          >
-            {siteContent.brand.founder}
-          </motion.h2>
+          />
 
           {/* staggered stat cards, mirrors the reference site's Experience/Completed/Support row */}
           <div className="grid grid-cols-3 gap-3 mb-12 max-w-md">
